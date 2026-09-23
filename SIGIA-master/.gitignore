@@ -1,2 +1,9 @@
 *.pyc
 *.py~
+
+# Base de datos local: cada uno la genera con migrate + loaddata (ver README)
+*.sqlite3
+*.sqlite3.bak
+
+# Entorno virtual
+venv/

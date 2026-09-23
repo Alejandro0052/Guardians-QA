@@ -1,0 +1,51 @@
+[
+{
+  "fields": {
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": true,
+    "is_staff": true,
+    "last_login": "2026-09-23T03:43:52.781Z",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$20000$a814QfqAWPDR$uoDTgeQKSKmd0X7AciPGkWwNyfDB3pa26ws7kNiYj9g=",
+    "email": "aurelio.vivas@correounivalle.edu.co",
+    "date_joined": "2015-09-30T14:33:36.921Z"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "username": "aurelio",
+    "first_name": "Aurelio",
+    "last_name": "Vivas",
+    "is_active": true,
+    "is_superuser": false,
+    "is_staff": false,
+    "last_login": "2015-10-08T01:13:39.910Z",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$20000$asajCbi5Zd5e$iyV3/wXlS121ecU/Xc+IVASVaej4D46aaJ38ktgL6Fk=",
+    "email": "aurelio.vivas@correounivalle.edu.co",
+    "date_joined": "2015-09-30T14:37:59Z"
+  },
+  "model": "auth.user"
+},
+{
+  "fields": {
+    "imagen": "imagenes/empleado/Aurelio_Vivas_p7Ighq9.jpg",
+    "tipo": "Gerente",
+    "salario": 300000,
+    "direccion": "Cr 4 # 12 - 09 ",
+    "user": [
+      "aurelio"
+    ],
+    "identificacion": "1143843823",
+    "telefono": "4562910"
+  },
+  "model": "empleado.empleado",
+  "pk": 1
+}
+]

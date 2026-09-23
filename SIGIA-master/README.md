@@ -9,3 +9,37 @@ Se requiere desarrollar una aplicación para un concesionario de automóviles; l
 Administrador Django
 Usuario: admin
 Password: admin
+
+#EJECUCIÓN LOCAL (Windows)
+
+Requisito: Python 2.7 (Django 1.8 y Pillow 2.9.0 no funcionan con Python 3.10+).
+Se puede instalar con `winget install --id Python.Python.2 --exact`, queda en `C:\Python27`.
+
+Crear el entorno virtual e instalar dependencias (una sola vez, desde `SIGIA-master`):
+
+```powershell
+C:\Python27\python.exe -m pip install --user "virtualenv<20.22"
+C:\Python27\python.exe -m virtualenv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Crear la base de datos local (no se sube al repo, cada uno tiene la suya):
+
+```powershell
+cd concesionario
+python manage.py migrate
+python manage.py loaddata fixtures/datos_iniciales.json
+```
+
+Esto crea los usuarios `admin` (superusuario) y `aurelio` (empleado con rol Gerente).
+Para volver a empezar desde cero basta con borrar `db.sqlite3` y repetir los dos comandos.
+
+Levantar el servidor:
+
+```powershell
+python manage.py runserver
+```
+
+- Aplicación: http://127.0.0.1:8000/
+- Administrador Django: http://127.0.0.1:8000/admin/
